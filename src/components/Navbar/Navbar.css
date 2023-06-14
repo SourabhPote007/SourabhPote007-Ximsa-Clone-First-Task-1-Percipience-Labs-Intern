@@ -1,0 +1,236 @@
+.container {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: fit-content;
+    margin-top: 80px;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #fff;
+    z-index: 2;
+    transition: all .3s;
+    animation: fadeDown 0.5s ease-in-out;
+    /* Additional styles for sticky navbar */
+}
+
+@keyframes fadeDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.header {
+    width: 90%;
+    /* margin: 10px auto; */
+}
+
+.header ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    font-weight: 700;
+}
+
+.header .Purchase_btn {
+    cursor: pointer;
+    text-align: center;
+    padding: 10px 5px;
+    width: 200px;
+    font-weight: 700;
+    border-radius: 30px;
+    background-size: 200%, 1px;
+    -webkit-transition: 500ms all ease;
+    transition: 500ms all ease;
+    background-image: -webkit-gradient(linear, left top, right top, from(#137ffc), color-stop(50%, #f94f5a), to(#137ffc));
+    background-image: linear-gradient(90deg, #137ffc 0%, #f94f5a 50%, #137ffc);
+}
+
+.header .Purchase_btn:hover {
+    background-position: 120%;
+    color: #fff;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.main span {
+    margin-top: 50px;
+    background-image: url(../../assets/hero-images/text-bg.png);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 1;
+    background-repeat: repeat;
+}
+
+.main h1 {
+    /* font-family: "GT Walsheim Pro";  */
+    background-image: url(../../assets/hero-images/text-bg.png);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 100px;
+    font-weight: 700;
+    line-height: 1;
+    background-position: 49% 40%;
+    background-repeat: repeat;
+    margin: 0;
+}
+.main h2 h3 
+{
+    margin: 0;
+}
+.main h2 {
+    font-size: 70px;
+    margin: 0;
+}
+
+.main .Btns {
+    display: flex;
+    width: 50%;
+    justify-content: center;
+    margin: 50px 0px 50px 0px;
+
+}
+
+.main .Btns a {
+    text-decoration: none;
+    color: #000;
+    height: 65px;
+    width: 225px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0px 10px;
+    font-weight: 700;
+    overflow: hidden;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    position: relative;
+    border-radius: 30px;
+    background-color: #fff;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-shadow: 0px 5px 16px 0px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 5px 16px 0px rgba(0, 0, 0, 0.1)
+}
+
+.main .Btns a:hover {
+    background-size: 200%, 0px;
+    -webkit-transition: 500ms all ease;
+    transition: 500ms all ease-in-out;
+    background-image: -webkit-gradient(linear, left top, right top, from(#137ffc), color-stop(50%, #f94f5a), to(#137ffc));
+    background-image: linear-gradient(90deg, #137ffc 0%, #f94f5a 50%, #137ffc);
+}
+
+.main .Btns a:hover {
+    background-position: 120%;
+    color: #fff;
+}
+.header ul li:nth-child(8){
+    display: none;
+    background: #fff;
+    padding: 5px;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.1);
+    font-size: x-large;
+}
+@media (max-width: 600px) {
+    .container
+    {
+        width: 100vw;
+        height: 100%;
+    }
+    .header
+    {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    img
+    {
+        width: 100px;
+    }
+    .header ul
+    {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: space-around;
+    }
+    .header ul li:nth-child(2)
+    {
+        display: none;
+    }
+    .header ul li:nth-child(3)
+    {
+        display: none;
+    }
+    .header ul li:nth-child(4)
+    {
+        display: none;
+    }
+    .header ul li:nth-child(5)
+    {
+        display: none;
+    }
+    .header ul li:nth-child(6)
+    {
+        display: none;
+    }
+    .header ul li:nth-child(8)
+    {
+        display: block;
+    }
+    .header .Purchase_btn {
+        padding: 5px 10px;
+        width: 150px;
+        font-size: 16px;
+    }
+    .sticky
+    {
+        margin-top: -15px;
+        padding-bottom: 10px;
+    }
+    .main span 
+    {
+        font-size: small;
+    }
+    .main h2 
+    {
+        font-size: 50px;
+    }
+    .main h2 h3 
+    {
+        margin: 0;
+        font-size: 40px;
+    }
+    .main .Btns a
+    {
+        margin: 0px 15px;
+        padding: 0px 88px;
+        font-size: medium;
+        white-space: nowrap;
+    }
+  }

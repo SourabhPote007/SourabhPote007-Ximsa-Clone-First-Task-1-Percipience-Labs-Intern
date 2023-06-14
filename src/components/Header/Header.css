@@ -1,0 +1,54 @@
+.envato
+{
+    background: #262626;
+    height: 50px;
+    width: 100%;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    z-index: 100;
+}
+
+.envato a img
+{
+    cursor: pointer;
+    width: 50%;
+    margin-left: 30px;
+}
+
+.envato span
+{
+    cursor: pointer;
+    padding: 5px 18px;
+    border-radius: 5px;
+    color: #fff;
+    -webkit-box-shadow: 0 2px 0 #6f9a37;
+    box-shadow: 0 2px 0 #6f9a37;
+    background-color: #82b440;
+    margin: 10px 30px 10px 0px;
+}
+
+@media (max-width: 600px) {
+    .envato
+    {
+    background: #262626;
+    height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    }
+    .envato a img
+    {
+    width: 50%;
+    margin-left: 10px;
+    }
+    .envato span
+    {
+        margin-right: 10px;
+        padding: 5px 20px;
+        white-space: nowrap;
+    }
+
+}
